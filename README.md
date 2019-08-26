@@ -1,4 +1,4 @@
-# Resolução de algumas problemáticas e Calculo total dos valores dos produtos de um carrinho de compras com ou sem frete WebApi
+# Resolução de algumas problemáticas e Cálculo total dos valores dos produtos de um carrinho de compras com ou sem frete WebApi
 
 # Sistema criado para atender as seguintes necessidades:
 
