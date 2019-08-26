@@ -36,4 +36,3 @@ Criar uma WEBAPI com um endpoint:
 * TDD (Test-Driven-Design)
 * Injeção de dependências
 * Testes unitários
-* Teste de integração com POSTMAN
