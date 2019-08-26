@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AtividadeTecnica.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:AtividadeTecnica.WebApi.Controllers.CarrinhoController.CalcularTotalProdutos(AtividadeTecnica.Application.ViewModels.CarrinhoViewModel)">
+            <summary>
+            Faz o cálculo do valor total dos produtos em um carrinho de compras em memória.        
+            <param name="carrinhoViewModel">Contem as informações do carrinho de compras como os produtos</param>        
+            <returns>O resultado será o valor do cálculo sem arredondamento, formatado com duas casas decimais.</returns>
+            <response code="200">O resultado será o valor do cálculo sem arredondamento, formatado com duas casas decimais</response>
+            </summary>
+        </member>
+    </members>
+</doc>

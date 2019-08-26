@@ -1,5 +1,5 @@
 ﻿using AtividadeTecnica.Domain.Business.Interfaces.PalavrasEmNumeros;
-using System;
+using AtividadeTecnica.Domain.Exceptions;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -23,7 +23,7 @@ namespace AtividadeTecnica.Domain.Business.PalavrasEmNumeros
         public long Calcular(string palavraEmNumero)
         {
             if (string.IsNullOrEmpty(palavraEmNumero) || !Regex.IsMatch(palavraEmNumero, @"^[a-zA-Z]+$"))
-                throw new Exception("Informe uma palavra válida!");
+                throw new BusinessException("Informe uma palavra válida!");
 
             var somaLetrasEmNumeros = 0;
             foreach (var letraEmNumero in palavraEmNumero)

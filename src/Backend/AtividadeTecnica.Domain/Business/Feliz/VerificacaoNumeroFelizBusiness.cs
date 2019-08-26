@@ -1,4 +1,5 @@
 ﻿using AtividadeTecnica.Domain.Business.Interfaces.Feliz;
+using AtividadeTecnica.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace AtividadeTecnica.Domain.Business.Feliz
         public bool Verificar(double feliz)
         {
             if (feliz < 0)
-                throw new Exception("O número feliz deve ser positivo!");
+                throw new BusinessException("O número feliz deve ser positivo!");
 
             feliz = Math.Pow(feliz, 2);
             var processamentoNumerosFelizes = new List<double>() { feliz };

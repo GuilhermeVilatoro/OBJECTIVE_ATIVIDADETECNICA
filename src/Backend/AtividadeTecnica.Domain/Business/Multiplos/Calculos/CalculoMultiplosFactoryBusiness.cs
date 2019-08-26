@@ -1,6 +1,6 @@
 ﻿using AtividadeTecnica.Domain.Business.Enums.Multiplos.Calculos;
 using AtividadeTecnica.Domain.Business.Interfaces.Multiplos.Calculos;
-using System;
+using AtividadeTecnica.Domain.Exceptions;
 
 namespace AtividadeTecnica.Domain.Business.Multiplos.Calculos
 {
@@ -30,7 +30,7 @@ namespace AtividadeTecnica.Domain.Business.Multiplos.Calculos
                 case TipoMultiploCalculoEnum.MultiploTresOuCincoESete:
                     return _calculoMultiplosTresOuCincoESete;
                 default:
-                    throw new Exception("O tipo de múltiplo para realização do cálculo é inválido!");
+                    throw new BusinessException("O tipo de múltiplo para realização do cálculo é inválido!");
             }
         }
     }

@@ -5,6 +5,7 @@ using AtividadeTecnica.Domain.Business.Interfaces.Multiplos;
 using AtividadeTecnica.Domain.Business.Interfaces.Multiplos.Calculos;
 using AtividadeTecnica.Domain.Business.Interfaces.PalavrasEmNumeros;
 using AtividadeTecnica.Domain.Business.Interfaces.Primo;
+using AtividadeTecnica.Domain.Exceptions;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -61,15 +62,15 @@ namespace AtividadeTecnica.ConsoleApp
                                 $"Esse número{isPrimo} é primo,{isFeliz} é feliz e{isMultiplo} é múltiplo de três ou cinco!\n");
                             break;
                         case 6:
-                            throw new Exception("Cálculo de Juros está implementado nna API WEB!");
+                            throw new BusinessException("Cálculo de Juros está implementado na API WEB!");
                         case 7:
                             Console.WriteLine("Saindo!");
                             break;
                        default:
-                            throw new Exception("Opção selecionada inválida!");
+                            throw new BusinessException("Opção selecionada inválida!");
                     }
                 }
-                catch (Exception ex)
+                catch (BusinessException ex)
                 {
                     Console.WriteLine($"Erro: {ex.Message}{Environment.NewLine}");                    
                 }

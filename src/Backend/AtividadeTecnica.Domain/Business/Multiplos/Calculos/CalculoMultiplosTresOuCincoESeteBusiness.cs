@@ -1,6 +1,6 @@
 ﻿using AtividadeTecnica.Domain.Business.Interfaces.Multiplos;
 using AtividadeTecnica.Domain.Business.Interfaces.Multiplos.Calculos;
-using System;
+using AtividadeTecnica.Domain.Exceptions;
 
 namespace AtividadeTecnica.Domain.Business.Multiplos.Calculos
 {
@@ -16,7 +16,7 @@ namespace AtividadeTecnica.Domain.Business.Multiplos.Calculos
         public long Calcular(long tetoCalculo)
         {
             if (tetoCalculo <= 0)
-                throw new Exception("O teto para realização do cálculo dos múltiplos deve ser maior que zero!");
+                throw new BusinessException("O teto para realização do cálculo dos múltiplos deve ser maior que zero!");
 
             long somaValoresMultiplosTresOuCincoESete = 0;
             for (int contador = 1; contador < tetoCalculo; contador++)
