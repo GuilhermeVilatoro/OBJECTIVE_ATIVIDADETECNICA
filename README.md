@@ -13,7 +13,7 @@ Criar um CONSOLEAPP para resolver estes problemas:
 ###  5 - Verificação de palavras e números      
 
 ## Informações para teste das problemáticas:
-* Os testes poderão ser realizados rodando a o console da aplicação e escolhendo a opção desejada.
+* Os testes poderão ser realizados rodando o console da aplicação e escolhendo a opção desejada.
 
 Criar uma WEBAPI com um endpoint:
 
